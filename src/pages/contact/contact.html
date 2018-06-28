@@ -1,17 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
-    </ion-title>
+      Add
+  </ion-title>
+
+
+  <ion-buttons end>
+    <button ion-button icon-only (click)="logout()">
+      <ion-icon name="ios-log-out"></ion-icon>
+    </button>
+  </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+  
+
+    <button ion-button block  color="light"   (click)="goTOAddGiftPage()">اضافة أماكن مراكز المعونات</button>
+    <br> <br>
+    <button ion-button block   color="secondary" (click)="goTOAddIftarPage()">   اضافة أماكن الافطار الجماعي</button> 
+    <br> <br>
+    <button ion-button block  color="light"    (click)="goTOShowGiftPage()">أماكن  المعونات</button>
+    <br> <br>
+    <button ion-button block   color="secondary" (click)=" goTOShowIftartPage()">   أماكن الافطار الجماعي</button>
+
+  
+
+
 </ion-content>
